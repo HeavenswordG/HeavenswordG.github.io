@@ -1,61 +1,54 @@
-primary_name: "Your Name"
+primary_name: "Shengxi Gui"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Shengxi Gui"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: Postdoctoral Researcher
+- name: University of Michigan
 
-
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+email: "gsx2037@gmail.com"
+github: HeavenswordG
+linkedin: shengxi-gui-50b0a9249
+orcid: 0000-0001-8932-0577
+institution_profile: https://midas.umich.edu/directory/shengxi-gui/
 
 short_bio_text_justify: false
+bio_title: "Remote sensing for a changing planet"
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am a remote sensing ecologist and postdoctoral researcher at the
+    <a href="https://seas.umich.edu/" target="_blank" rel="noopener">University of Michigan School for Environment and Sustainability</a>.
+    I use satellite imagery, LiDAR, photogrammetry, and machine learning to understand how forests respond to disturbance, recover, and store carbon in a warming world.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    I earned my Ph.D. in Remote Sensing and Photogrammetry from The Ohio State University in 2024. My work connects Earth observation with ecological and urban questions—from post-fire forest recovery and carbon dynamics to satellite-based 3D reconstruction.
   </p>
+  <div class="research-tags" aria-label="Research areas">
+    <span>Forest dynamics</span>
+    <span>Wildfire</span>
+    <span>Satellite photogrammetry</span>
+    <span>Geospatial AI</span>
+  </div>
 
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_url: https://github.com/HeavenswordG.png
+portrait_caption: "Shengxi Gui"
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+- name: The Ohio State University
+  position: Ph.D. in Remote Sensing & Photogrammetry
+  date: "2024"
+- name: The Ohio State University
+  position: M.S.
+  date: "2020"
+- name: Wuhan University
+  position: B.S. in Remote Sensing
+  date: "2018"
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
-
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+experience:
+- name: University of Michigan
+  dept: School for Environment and Sustainability
+  position: Postdoctoral Researcher
+  date: 2024 - Present
+- name: Michigan Institute for Data & AI in Society
+  position: Postdoctoral Affiliates Fellow
+  date: 2025 Cohort

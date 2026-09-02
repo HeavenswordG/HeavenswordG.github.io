@@ -1,3 +1,7 @@
+{% assign portrait_src = site.data.profile.portrait_url %}
+{% unless site.data.profile.portrait_url contains '://' %}
+    {% assign portrait_src = site.data.profile.portrait_url | relative_url %}
+{% endunless %}
 <div class="row sticky-top" style="top: 80px">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
@@ -7,15 +11,16 @@
                         {% if site.data.profile.portrait_url %}
                         <!-- When the screen is wider than md, float the portrait on the right -->
                         <div class="figure d-none d-md-block">
-                            <img 
-                                src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid" 
-                                data-toggle="tooltip" 
-                                data-placement="top" 
+                            <img
+                                src="{{ portrait_src }}"
+                                class="figure-img img-fluid profile-portrait"
+                                alt="Portrait of {{ site.data.profile.primary_name }}"
+                                data-toggle="tooltip"
+                                data-placement="top"
                                 title="{{ site.data.profile.portrait_caption }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ portrait_src }}" class="rounded-circle profile-portrait-mobile" alt="Portrait of {{ site.data.profile.primary_name }}">
                         </div>
                         {% endif %}
                     </div>
@@ -36,7 +41,7 @@
 
                 <div class="row small">
                     <div class="col text-center">
-                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
+                        <a class="email-text" href="mailto:{{ site.data.profile.email }}" aria-label="Email {{ site.data.profile.primary_name }}">
                             {{ site.data.profile.email | replace: "@", "(at)" }}
                         </a>
                     </div>
@@ -50,14 +55,14 @@
                         {%- else -%}
                         {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                         {%- endif -%}
-                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
-                            <i class="fab fa-google-scholar"></i>
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ gscholar_url }}" aria-label="Google Scholar">
+                            <i class="fab fa-google-scholar" aria-hidden="true"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                            <i class="fab fa-github"></i>
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                         {% endif %}
 
@@ -68,20 +73,26 @@
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i>
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="https://twitter.com/{{ site.data.profile.twitter }}" aria-label="X / Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i>
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                            <i class="fab fa-orcid"></i>
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="https://orcid.org/{{ site.data.profile.orcid }}" aria-label="ORCID">
+                            <i class="fab fa-orcid" aria-hidden="true"></i>
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.institution_profile %}
+                        <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.institution_profile }}" aria-label="University profile">
+                            <i class="fas fa-building-columns" aria-hidden="true"></i>
                         </a>
                         {% endif %}
                     </div>

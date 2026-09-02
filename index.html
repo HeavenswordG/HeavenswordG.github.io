@@ -1,6 +1,7 @@
 ---
 layout: default
-title : Homepage
+title: Home
+description: "Shengxi Gui is a remote sensing ecologist working on forest dynamics, wildfire, satellite photogrammetry, and geospatial AI."
 navbar_title: Home
 ---
 
@@ -11,10 +12,6 @@ navbar_title: Home
     <div class="col-lg-9 col-md-8">
 
         {% include widgets/profile_card_bio_only.html %}
-
-        <!-- Debugging widgets -->
-        {% include widgets/debug_repo_name.html %}
-        {% include widgets/debug_url.html %}
 
         {% if site.data.display.homepage.show_experience %}
             {% include widgets/experience_card.html %}

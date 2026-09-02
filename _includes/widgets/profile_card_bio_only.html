@@ -5,7 +5,8 @@
             <div class="card-body p-4">
                 <div class="row px-3 pt-3">
                     <div class="col h3">
-                        About Me
+                        <span class="section-kicker">About</span>
+                        {{ site.data.profile.bio_title | default: "About Me" }}
                     </div>
                 </div>
                 <div class="row p-3">
