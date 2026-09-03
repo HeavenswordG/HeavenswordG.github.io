@@ -1,48 +1,88 @@
 ---
 layout: default
 title: Research
-description: "Research themes spanning forest disturbance, satellite photogrammetry, and geospatial artificial intelligence."
+description: "Remote sensing research across urban environments, forests and wildfire, mountain glaciers, and inland waters."
 navbar_title: Research
 permalink: /research/
+container_class: container-xl
 ---
 
-<header class="research-hero">
-    <span class="section-kicker">Research</span>
-    <h1>Observing environmental change from above</h1>
-    <p class="lead">
-        I develop scalable ways to turn Earth-observation data into evidence about changing forests, landscapes, and cities. My work brings together ecological questions and geospatial computation across pixels, point clouds, and time.
-    </p>
+<header class="research-intro">
+    <span class="section-kicker">Research program</span>
+    <h1>{{ site.data.research.overview.title }}</h1>
+    <p class="lead">{{ site.data.research.overview.description }}</p>
 </header>
 
-<section class="research-grid" aria-label="Research themes">
-    <article class="research-theme">
-        <span class="theme-number">01</span>
-        <i class="fas fa-tree theme-icon" aria-hidden="true"></i>
-        <h2>Forest disturbance & recovery</h2>
-        <p>Measuring how wildfire, prior burns, and climate shape forest structure, post-disturbance recovery, and the risk of long-term forest loss.</p>
-        <div class="theme-methods">Time series · LiDAR · Ecological modeling</div>
-    </article>
-    <article class="research-theme">
-        <span class="theme-number">02</span>
-        <i class="fas fa-cubes-stacked theme-icon" aria-hidden="true"></i>
-        <h2>Satellite photogrammetry</h2>
-        <p>Extracting reliable 3D information from stereo and multi-view satellite imagery for buildings, glaciers, and other dynamic surfaces.</p>
-        <div class="theme-methods">3D reconstruction · DSMs · Change detection</div>
-    </article>
-    <article class="research-theme">
-        <span class="theme-number">03</span>
-        <i class="fas fa-satellite theme-icon" aria-hidden="true"></i>
-        <h2>Geospatial AI</h2>
-        <p>Designing machine-learning methods that connect multimodal observations with interpretable, decision-relevant information at landscape scale.</p>
-        <div class="theme-methods">Deep learning · Computer vision · Data fusion</div>
-    </article>
-</section>
+<figure class="research-overview-figure">
+    <img
+        src="{{ site.data.research.overview.image | relative_url }}"
+        alt="{{ site.data.research.overview.image_alt }}">
+    <figcaption>
+        <p>{{ site.data.research.overview.caption }}</p>
+        <div class="research-domain-list" aria-label="Research environments">
+            <span><i class="fas fa-city" aria-hidden="true"></i> Urban</span>
+            <span><i class="fas fa-tree" aria-hidden="true"></i> Forest</span>
+            <span><i class="fas fa-mountain" aria-hidden="true"></i> Mountain &amp; glacier</span>
+            <span><i class="fas fa-water" aria-hidden="true"></i> Inland water</span>
+        </div>
+    </figcaption>
+</figure>
 
-<section class="collaboration-callout">
-    <div>
-        <span class="section-kicker">Collaboration</span>
-        <h2>Interested in working together?</h2>
-        <p>I am especially interested in projects that bridge Earth observation, ecology, and actionable climate science.</p>
+<section class="research-directions" aria-labelledby="directions-heading">
+    <header class="research-directions-heading">
+        <span class="section-kicker">Research directions</span>
+        <h2 id="directions-heading">From image pixels to environmental insight</h2>
+        <p>Each direction combines domain questions with scalable observation and analysis. The figure areas below are ready for project-specific graphics.</p>
+    </header>
+
+    <div class="research-direction-list">
+        {% for direction in site.data.research.directions %}
+        <article class="research-direction" id="{{ direction.id }}">
+            <div class="research-direction-media">
+                {% if direction.image and direction.image != "" %}
+                <img src="{{ direction.image | relative_url }}" alt="{{ direction.image_alt }}" loading="lazy">
+                {% else %}
+                <div class="research-figure-placeholder" role="img" aria-label="{{ direction.image_alt }}">
+                    <i class="far fa-image" aria-hidden="true"></i>
+                    <strong>Research figure</strong>
+                    <span>{{ direction.image_hint }}</span>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="research-direction-content">
+                <div class="research-direction-index">
+                    <span>{{ forloop.index | prepend: '0' }}</span>
+                    <span>{{ direction.label }}</span>
+                </div>
+                <h2>{{ direction.title }}</h2>
+                <p class="research-direction-description">{{ direction.description }}</p>
+
+                {% if direction.methods %}
+                <div class="research-methods" aria-label="Methods and topics">
+                    {% for method in direction.methods %}<span>{{ method }}</span>{% endfor %}
+                </div>
+                {% endif %}
+
+                {% if direction.publications %}
+                <div class="research-publications">
+                    <h3>Related publications</h3>
+                    <ul>
+                        {% for publication in direction.publications %}
+                        <li>
+                            <span class="research-publication-year">{{ publication.year }}</span>
+                            {% if publication.url and publication.url != "" %}
+                            <a href="{{ publication.url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+                            {% else %}
+                            <span>{{ publication.title }}</span>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
     </div>
-    <a class="contact-button" href="mailto:{{ site.data.profile.email }}">Start a conversation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </section>

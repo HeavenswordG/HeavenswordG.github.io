@@ -12,21 +12,21 @@ linkedin: shengxi-gui-50b0a9249
 orcid: 0000-0001-8932-0577
 
 short_bio_text_justify: false
-bio_title: "Remote sensing for a changing planet"
+bio_title: "Remote sensing across a changing planet"
 short_bio: >-
   <p>
-    I am a remote sensing ecologist and postdoctoral researcher at the
+    I am a remote sensing scientist and postdoctoral researcher at the
     <a href="https://seas.umich.edu/" target="_blank" rel="noopener">University of Michigan School for Environment and Sustainability</a>.
-    I use satellite imagery, LiDAR, photogrammetry, and machine learning to understand how forests respond to disturbance, recover, and store carbon in a warming world.
+    I develop Earth-observation methods that turn satellite imagery and geospatial data into measurements of built and natural environments.
   </p>
   <p>
-    I earned my Ph.D. in Remote Sensing and Photogrammetry from The Ohio State University in 2024. My work connects Earth observation with ecological and urban questions—from post-fire forest recovery and carbon dynamics to satellite-based 3D reconstruction.
+    My research spans satellite photogrammetry and 3D reconstruction, urban mapping, forest resilience and wildfire, glacier dynamics, inland-water quality, deep learning, and GeoAI. I earned my Ph.D. in Civil, Environmental, and Geodetic Engineering from The Ohio State University, where my dissertation advanced satellite-photogrammetry applications for built-up area modeling and natural-environment monitoring.
   </p>
   <div class="research-tags" aria-label="Research areas">
-    <span>Forest dynamics</span>
-    <span>Wildfire</span>
     <span>Satellite photogrammetry</span>
-    <span>Geospatial AI</span>
+    <span>3D reconstruction</span>
+    <span>Environmental monitoring</span>
+    <span>Deep learning &amp; GeoAI</span>
   </div>
 
 portrait_url: https://github.com/HeavenswordG.png
@@ -34,20 +34,23 @@ portrait_caption: "Shengxi Gui"
 
 education:
 - name: The Ohio State University
-  position: Ph.D. in Civil, Environmental, & Geodetic Engineering
-  date: "2024"
+  dept: Department of Civil, Environmental & Geodetic Engineering
+  position: Ph.D.
+  date: Aug 2020 - May 2024
 - name: The Ohio State University
-  position: M.S. in Civil, Environmental, & Geodetic Engineering
-  date: "2020"
+  dept: Department of Civil, Environmental & Geodetic Engineering
+  position: M.S.
+  date: Aug 2018 - May 2020
 - name: Wuhan University
+  dept: School of Remote Sensing and Information Engineering
   position: B.S. in Remote Sensing
-  date: "2018"
+  date: Sep 2014 - Jun 2018
 
 experience:
 - name: University of Michigan
-  dept: School for Environment and Sustainability
+  dept: School for Environment and Sustainability · Institute for Global Change Biology
   position: Postdoctoral Researcher
-  date: 2024 - Present
+  date: Aug 2024 - Aug 2026
 - name: Michigan Institute for Data & AI in Society
   position: Postdoctoral Affiliates Fellow
   date: 2025 Cohort

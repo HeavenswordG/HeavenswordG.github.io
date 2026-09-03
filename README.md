@@ -10,8 +10,18 @@ This repository contains a Jekyll site for GitHub Pages, adapted from
 - Homepage display options and footer: `_data/display.yml`
 - Publications: add or edit Markdown files in `_publications/<year>/`
 - News: add or edit Markdown files in `_news/`
-- Research narrative: `research.html`
+- Research directions, descriptions, figure paths, methods, and related
+  publications: `_data/research.yml`
+- Research page structure: `research.html`
 - Colors, typography, spacing, and responsive styles: `assets/css/global.css`
+
+To add a figure for a research direction, save the image under
+`assets/images/research/`, then set that direction's `image` value in
+`_data/research.yml`, for example:
+
+```yaml
+image: "/assets/images/research/forest-wildfire.jpg"
+```
 
 ## Preview locally
 

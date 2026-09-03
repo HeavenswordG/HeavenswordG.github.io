@@ -1,0 +1,115 @@
+overview:
+  title: "Remote sensing across built and natural environments"
+  description: >-
+    I develop Earth-observation methods that connect satellite imagery,
+    photogrammetry, 3D data, and artificial intelligence with questions about
+    cities, forests, mountains, and inland waters.
+  image: "/assets/images/research/remote-sensing-overview.jpg"
+  image_alt: >-
+    Integrated remote-sensing view of a city, forest and burned area,
+    glaciated mountains, and a lake with geospatial data overlays.
+  caption: >-
+    One observing system, many landscapes: measuring form, function, and
+    change from individual structures to regional ecosystems.
+
+directions:
+  - id: "built-environments"
+    label: "Urban"
+    title: "Built environments and 3D reconstruction"
+    image: ""
+    image_alt: "Research figure for satellite-based urban 3D reconstruction"
+    image_hint: "Add an urban reconstruction figure"
+    description: >-
+      I develop satellite-photogrammetry workflows that transform stereo and
+      multi-view imagery into digital surface models, orthophotos, and
+      structured 3D representations of buildings. This work combines geometric
+      modeling, object detection, and deep learning to make detailed urban
+      mapping more scalable and transferable.
+    methods:
+      - "Satellite photogrammetry"
+      - "LoD-2 modeling"
+      - "Object detection"
+      - "3D reconstruction"
+    publications:
+      - title: "Automated LoD-2 model reconstruction from very-high-resolution satellite-derived digital surface model and orthophoto"
+        year: "2021"
+        url: "https://doi.org/10.1016/j.isprsjprs.2021.08.025"
+      - title: "SAT2LOD2: software for automated LoD-2 building reconstruction"
+        year: "2022"
+        url: "https://doi.org/10.5194/isprs-archives-XLIII-B2-2022-379-2022"
+      - title: "Unit-Level LoD-2 Building Reconstruction from Satellite-Derived DSM and Orthophoto"
+        year: "2024"
+        url: "https://doi.org/10.5194/isprs-annals-X-2-2024-81-2024"
+      - title: "Sat2Building: LoD-2 Building Reconstruction from Satellite Imagery Using Spatial Embeddings"
+        year: "2025"
+        url: "https://doi.org/10.14358/PERS.24-00097R3"
+
+  - id: "forests-wildfire"
+    label: "Forest"
+    title: "Forest resilience and wildfire"
+    image: ""
+    image_alt: "Research figure for forest disturbance and wildfire recovery"
+    image_hint: "Add a forest or wildfire figure"
+    description: >-
+      I use satellite time series and spatial metrics to study how fire
+      severity, repeated burns, and a changing climate alter forest structure
+      and recovery. The goal is to identify where resilience is being eroded,
+      where prior fire moderates future impacts, and how remote sensing can
+      reveal persistent forest loss at landscape scales.
+    methods:
+      - "Satellite time series"
+      - "Spatial pattern analysis"
+      - "Disturbance ecology"
+      - "Forest resilience"
+    publications:
+      - title: "Prior low-severity burns reduce risk of persistent forest loss from subsequent fires"
+        year: "Under review"
+        url: "https://doi.org/10.64898/2026.08.23.746551"
+      - title: "Prolonged Postfire Recovery of Forest Spatial Structure Revealed by Patch Area and Edge Integrity"
+        year: "In progress"
+        url: ""
+      - title: "Accelerated biomass loss in western US forests due to shifting fire regime"
+        year: "Under review"
+        url: ""
+
+  - id: "mountains-glaciers"
+    label: "Mountain"
+    title: "Mountain and glacier dynamics"
+    image: ""
+    image_alt: "Research figure for satellite monitoring of glacier dynamics"
+    image_hint: "Add a mountain or glacier figure"
+    description: >-
+      I use high-cadence satellite imagery to reconstruct elevation and surface
+      change in remote mountain environments. Time-series elevation models and
+      orthophotos make it possible to track glacier motion and three-dimensional
+      dynamics where field observations are sparse.
+    methods:
+      - "Time-series elevation models"
+      - "PlanetScope imagery"
+      - "Surface change"
+      - "Glacier dynamics"
+    publications:
+      - title: "Using PlanetScope-derived time-series elevation models and orthophotos to track glacier 3D dynamics in mid-latitude mountain regions"
+        year: "2025"
+        url: "https://doi.org/10.1080/15481603.2025.2507470"
+
+  - id: "inland-waters"
+    label: "Water"
+    title: "Inland water quality"
+    image: ""
+    image_alt: "Research figure for satellite monitoring of lake water quality"
+    image_hint: "Add a lake or water-quality figure"
+    description: >-
+      I connect multispectral satellite observations with process-aware models
+      to improve monitoring of inland water quality. Current work accounts for
+      the vertical movement of algae when estimating surface-water chlorophyll-a,
+      helping reconcile what satellites observe with how aquatic systems behave.
+    methods:
+      - "Multispectral imagery"
+      - "Water quality"
+      - "Chlorophyll-a"
+      - "Process-based modeling"
+    publications:
+      - title: "Enhanced remote sensing of surface water Chlorophyll-a: Coupling dynamic algae vertical movement modeling with multi-spectral satellite images"
+        year: "2026"
+        url: "https://doi.org/10.1016/j.isprsjprs.2026.02.028"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "Shengxi Gui is a remote sensing ecologist working on forest dynamics, wildfire, satellite photogrammetry, and geospatial AI."
+description: "Shengxi Gui is a remote sensing scientist working across satellite photogrammetry, 3D reconstruction, environmental monitoring, and GeoAI."
 navbar_title: Home
 container_class: container-xl
 ---
@@ -13,21 +13,13 @@ container_class: container-xl
 
 <section class="home-hero" aria-labelledby="home-title">
     <div class="home-hero-copy">
-        <p class="home-eyebrow">Shengxi Gui <span aria-hidden="true">·</span> Remote sensing ecologist</p>
+        <p class="home-eyebrow">Shengxi Gui <span aria-hidden="true">·</span> Remote sensing scientist</p>
         <h1 id="home-title">{{ site.data.profile.bio_title | default: "Remote sensing for a changing planet" }}</h1>
 
         <div class="home-intro" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
             {{ site.data.profile.short_bio }}
         </div>
 
-        <div class="home-actions" aria-label="Explore Shengxi Gui's work">
-            <a class="home-button home-button-primary" href="{{ '/research' | relative_url }}">
-                Explore research <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <a class="home-button home-button-secondary" href="{{ '/publications' | relative_url }}">
-                View publications
-            </a>
-        </div>
     </div>
 
     <aside class="home-identity" aria-label="Profile and contact information">
@@ -83,7 +75,7 @@ container_class: container-xl
             <span class="section-kicker">Academic journey</span>
             <h2 id="journey-title">Experience &amp; education</h2>
         </div>
-        <p>A path from satellite-based 3D reconstruction to ecological remote sensing and climate resilience.</p>
+        <p>A path connecting photogrammetry, artificial intelligence, and Earth observation across built and natural environments.</p>
     </header>
     {% include widgets/experience_card.html %}
 </section>
