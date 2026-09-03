@@ -18,9 +18,9 @@ directions:
   - id: "built-environments"
     label: "Urban"
     title: "Built environments and 3D reconstruction"
-    image: ""
-    image_alt: "Research figure for satellite-based urban 3D reconstruction"
-    image_hint: "Add an urban reconstruction figure"
+    image: "/assets/images/research/urban-3d-reconstruction.png"
+    image_alt: "Satellite-derived three-dimensional building models colored by elevation"
+    figure_caption: "Satellite-derived LoD-2 building reconstruction showing modeled roof forms and relative heights."
     description: >-
       Satellite-derived orthophotos and digital surface models support scalable
       LoD-2 building reconstruction across large urban areas. The research
@@ -52,9 +52,9 @@ directions:
   - id: "forests-wildfire"
     label: "Forest"
     title: "Forest resilience and wildfire"
-    image: ""
-    image_alt: "Research figure for forest disturbance and wildfire recovery"
-    image_hint: "Add a forest or wildfire figure"
+    image: "/assets/images/research/forest-wildfire.png"
+    image_alt: "Global maps and charts of persistent forest loss, recovery, resilience, and mitigation potential"
+    figure_caption: "Global evidence of postfire forest persistence, structural and functional recovery, and mitigation potential."
     description: >-
       Satellite-observed trajectories of forest structure and ecosystem
       function are used to quantify postfire recovery, persistent forest loss,
@@ -81,11 +81,11 @@ directions:
         url: ""
 
   - id: "mountains-glaciers"
-    label: "Mountain"
-    title: "Mountain and glacier dynamics"
-    image: ""
-    image_alt: "Research figure for satellite monitoring of glacier dynamics"
-    image_hint: "Add a mountain or glacier figure"
+    label: "Glacier"
+    title: "Glacier dynamics"
+    image: "/assets/images/research/glacier-dynamics.png"
+    image_alt: "Satellite-derived three-dimensional terrain model and glacier surface-velocity map"
+    figure_caption: "Satellite-derived 3D terrain and surface-velocity mapping for glacier dynamics."
     description: >-
       High-cadence PlanetScope stereo imagery is converted into co-registered
       time-series elevation models and orthophotos to measure glacier elevation
@@ -106,9 +106,9 @@ directions:
   - id: "inland-waters"
     label: "Water"
     title: "Inland water quality"
-    image: ""
-    image_alt: "Research figure for satellite monitoring of lake water quality"
-    image_hint: "Add a lake or water-quality figure"
+    image: "/assets/images/research/inland-water-quality.png"
+    image_alt: "Diagram showing field-to-satellite timing mismatch caused by algae moving vertically in the water column"
+    figure_caption: "Field-to-satellite timing mismatch associated with diurnal algal vertical movement."
     description: >-
       Near-daily PlanetScope observations are combined with in-situ sonde
       profiles and a model of diurnal algal vertical migration to improve

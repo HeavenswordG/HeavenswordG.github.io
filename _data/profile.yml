@@ -31,7 +31,7 @@ short_bio: >-
     <span>Deep learning &amp; GeoAI</span>
   </div>
 
-portrait_url: https://github.com/HeavenswordG.png
+portrait_url: "/assets/images/photos/portrait.png"
 portrait_caption: "Shengxi Gui"
 
 education:
@@ -45,7 +45,7 @@ education:
   date: Aug 2018 - May 2020
 - name: Wuhan University
   dept: School of Remote Sensing and Information Engineering
-  position: B.S. 
+  position: B.S.
   date: Sep 2014 - Jun 2018
 
 experience:

@@ -35,30 +35,53 @@ container_class: container-xl
     <header class="research-directions-heading">
         <span class="section-kicker">Research directions</span>
         <h2 id="directions-heading">From image pixels to environmental insight</h2>
-        <p>Each direction combines domain questions with scalable observation and analysis. The figure areas below are ready for project-specific graphics.</p>
+        <p>Each direction pairs visual evidence with a concise research summary, core methods, and related publications.</p>
     </header>
 
     <div class="research-direction-list">
         {% for direction in site.data.research.directions %}
         <article class="research-direction" id="{{ direction.id }}">
-            <div class="research-direction-media">
-                {% if direction.image and direction.image != "" %}
-                <img src="{{ direction.image | relative_url }}" alt="{{ direction.image_alt }}" loading="lazy">
-                {% else %}
-                <div class="research-figure-placeholder" role="img" aria-label="{{ direction.image_alt }}">
-                    <i class="far fa-image" aria-hidden="true"></i>
-                    <strong>Research figure</strong>
-                    <span>{{ direction.image_hint }}</span>
-                </div>
-                {% endif %}
-            </div>
-
-            <div class="research-direction-content">
+            <header class="research-direction-header">
                 <div class="research-direction-index">
                     <span>{{ forloop.index | prepend: '0' }}</span>
                     <span>{{ direction.label }}</span>
                 </div>
                 <h2>{{ direction.title }}</h2>
+            </header>
+
+            <figure class="research-direction-figure">
+                {% if direction.image and direction.image != "" %}
+                <a
+                    class="research-direction-media"
+                    href="{{ direction.image | relative_url }}"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Open full-size figure for {{ direction.title }}">
+                    <img src="{{ direction.image | relative_url }}" alt="{{ direction.image_alt }}" loading="lazy">
+                </a>
+                {% else %}
+                <div class="research-direction-media">
+                    <div class="research-figure-placeholder" role="img" aria-label="{{ direction.image_alt }}">
+                        <i class="far fa-image" aria-hidden="true"></i>
+                        <strong>Research figure</strong>
+                        <span>{{ direction.image_hint }}</span>
+                    </div>
+                </div>
+                {% endif %}
+                {% if direction.figure_caption %}
+                <figcaption>
+                    <span>{{ direction.figure_caption }}</span>
+                    {% if direction.image and direction.image != "" %}
+                    <a href="{{ direction.image | relative_url }}" target="_blank" rel="noopener">
+                        View full size <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                    </a>
+                    {% endif %}
+                </figcaption>
+                {% endif %}
+            </figure>
+
+            <div class="research-direction-body">
+                <div class="research-direction-summary">
                 <p class="research-direction-description">{{ direction.description }}</p>
 
                 {% if direction.methods %}
@@ -66,6 +89,7 @@ container_class: container-xl
                     {% for method in direction.methods %}<span>{{ method }}</span>{% endfor %}
                 </div>
                 {% endif %}
+                </div>
 
                 {% if direction.publications %}
                 <div class="research-publications">
