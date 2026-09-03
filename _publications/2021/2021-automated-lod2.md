@@ -11,7 +11,6 @@ authors:
   - Rongjun Qin
 highlights:
   - "Featured Article of the Month (Editor's Choice)"
-  - "Open-source implementation: 232 GitHub stars"
 links:
   DOI: https://doi.org/10.1016/j.isprsjprs.2021.08.025
   Code: https://github.com/GDAOSU/LOD2BuildingModel

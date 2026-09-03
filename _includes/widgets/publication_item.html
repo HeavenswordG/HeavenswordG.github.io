@@ -13,11 +13,14 @@
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
             {% if item.highlights %}
-            <ul class="publication-highlights" aria-label="Awards and distinctions">
+            <div class="publication-recognition" role="note" aria-label="Awards and distinctions">
+                <span class="publication-recognition-label">Recognition</span>
+                <span class="publication-recognition-text">
                 {% for highlight in item.highlights %}
-                <li><i class="fas fa-award" aria-hidden="true"></i>{{ highlight }}</li>
+                    <span>{{ highlight }}</span>{% unless forloop.last %}<span class="publication-recognition-separator" aria-hidden="true"> · </span>{% endunless %}
                 {% endfor %}
-            </ul>
+                </span>
+            </div>
             {% endif %}
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
             
@@ -44,11 +47,14 @@
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
                 <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
                 {% if item.highlights %}
-                <ul class="publication-highlights" aria-label="Awards and distinctions">
+                <div class="publication-recognition" role="note" aria-label="Awards and distinctions">
+                    <span class="publication-recognition-label">Recognition</span>
+                    <span class="publication-recognition-text">
                     {% for highlight in item.highlights %}
-                    <li><i class="fas fa-award" aria-hidden="true"></i>{{ highlight }}</li>
+                        <span>{{ highlight }}</span>{% unless forloop.last %}<span class="publication-recognition-separator" aria-hidden="true"> · </span>{% endunless %}
                     {% endfor %}
-                </ul>
+                    </span>
+                </div>
                 {% endif %}
                 <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
                 
