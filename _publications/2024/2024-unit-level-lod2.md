@@ -12,5 +12,5 @@ authors:
   - Ksenia Bittner
   - Rongjun Qin
 links:
-  Paper: https://doi.org/10.5194/isprs-annals-X-2-2024-81-2024
+  DOI: https://doi.org/10.5194/isprs-annals-X-2-2024-81-2024
 ---

@@ -9,7 +9,10 @@ abstract: >-
 authors:
   - Shengxi Gui
   - Rongjun Qin
+highlights:
+  - "Featured Article of the Month (Editor's Choice)"
+  - "Open-source implementation: 232 GitHub stars"
 links:
-  Paper: https://doi.org/10.1016/j.isprsjprs.2021.08.025
-  Preprint: https://arxiv.org/abs/2109.03876
+  DOI: https://doi.org/10.1016/j.isprsjprs.2021.08.025
+  Code: https://github.com/GDAOSU/LOD2BuildingModel
 ---

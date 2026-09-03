@@ -10,9 +10,9 @@ authors:
   - Yang Tang
   - Shuang Song
   - Shengxi Gui
-  - Wei-Lun Chao
   - Chinmin Cheng
+  - Wei-Lun Chao
   - Rongjun Qin
 links:
-  Paper: https://doi.org/10.3390/s23031437
+  DOI: https://doi.org/10.3390/s23031437
 ---

@@ -12,6 +12,8 @@ authors:
   - Rongjun Qin
   - Friedrich Fraundorfer
   - Ksenia Bittner
+highlights:
+  - "ESRI Best Paper Award"
 links:
-  Paper: https://doi.org/10.14358/PERS.24-00097R3
+  DOI: https://doi.org/10.14358/PERS.24-00097R3
 ---

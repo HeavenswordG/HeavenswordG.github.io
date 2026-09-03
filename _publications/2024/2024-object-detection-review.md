@@ -9,8 +9,11 @@ abstract: >-
 authors:
   - Shengxi Gui
   - Shuang Song
-  - Rongjun Qin
   - Yang Tang
+  - Rongjun Qin
+highlights:
+  - "Best Paper Award"
+  - "ESI Top 1% Highly Cited Paper in Geoscience"
 links:
-  Paper: https://doi.org/10.3390/rs16020327
+  DOI: https://doi.org/10.3390/rs16020327
 ---
