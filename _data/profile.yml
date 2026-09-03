@@ -10,7 +10,6 @@ email: "gsx2037@gmail.com"
 github: HeavenswordG
 linkedin: shengxi-gui-50b0a9249
 orcid: 0000-0001-8932-0577
-institution_profile: https://midas.umich.edu/directory/shengxi-gui/
 
 short_bio_text_justify: false
 bio_title: "Remote sensing for a changing planet"
@@ -35,10 +34,10 @@ portrait_caption: "Shengxi Gui"
 
 education:
 - name: The Ohio State University
-  position: Ph.D. in Remote Sensing & Photogrammetry
+  position: Ph.D. in Civil, Environmental, & Geodetic Engineering
   date: "2024"
 - name: The Ohio State University
-  position: M.S.
+  position: M.S. in Civil, Environmental, & Geodetic Engineering
   date: "2020"
 - name: Wuhan University
   position: B.S. in Remote Sensing

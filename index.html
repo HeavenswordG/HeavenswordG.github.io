@@ -3,34 +3,100 @@ layout: default
 title: Home
 description: "Shengxi Gui is a remote sensing ecologist working on forest dynamics, wildfire, satellite photogrammetry, and geospatial AI."
 navbar_title: Home
+container_class: container-xl
 ---
 
-<div class="row">
-    <div class="col-lg-3 col-md-4">
-        {% include widgets/profile_card_mini.html %}
+{% assign portrait_src = site.data.profile.portrait_url %}
+{% unless site.data.profile.portrait_url contains '://' %}
+    {% assign portrait_src = site.data.profile.portrait_url | relative_url %}
+{% endunless %}
+
+<section class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero-copy">
+        <p class="home-eyebrow">Shengxi Gui <span aria-hidden="true">·</span> Remote sensing ecologist</p>
+        <h1 id="home-title">{{ site.data.profile.bio_title | default: "Remote sensing for a changing planet" }}</h1>
+
+        <div class="home-intro" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+            {{ site.data.profile.short_bio }}
+        </div>
+
+        <div class="home-actions" aria-label="Explore Shengxi Gui's work">
+            <a class="home-button home-button-primary" href="{{ '/research' | relative_url }}">
+                Explore research <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="home-button home-button-secondary" href="{{ '/publications' | relative_url }}">
+                View publications
+            </a>
+        </div>
     </div>
-    <div class="col-lg-9 col-md-8">
 
-        {% include widgets/profile_card_bio_only.html %}
-
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
+    <aside class="home-identity" aria-label="Profile and contact information">
+        {% if site.data.profile.portrait_url %}
+        <div class="home-portrait-frame">
+            <img
+                src="{{ portrait_src }}"
+                class="home-portrait"
+                alt="Portrait of {{ site.data.profile.primary_name }}"
+                title="{{ site.data.profile.portrait_caption }}">
+        </div>
         {% endif %}
 
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
+        <div class="home-identity-body">
+            <span class="home-identity-label">Currently</span>
+            <h2>{{ site.data.profile.primary_name }}</h2>
+            <p>
+                {% for position in site.data.profile.positions %}
+                    {{ position.name }}{% unless forloop.last %}<br>{% endunless %}
+                {% endfor %}
+            </p>
+
+            <div class="home-socials" aria-label="Contact and professional profiles">
+                {% if site.data.profile.email %}
+                <a href="mailto:{{ site.data.profile.email }}" aria-label="Email {{ site.data.profile.primary_name }}">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+                {% if site.data.profile.github %}
+                <a target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+                {% if site.data.profile.linkedin %}
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+                {% if site.data.profile.orcid %}
+                <a target="_blank" rel="noopener" href="https://orcid.org/{{ site.data.profile.orcid }}" aria-label="ORCID">
+                    <i class="fab fa-orcid" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </aside>
+</section>
+
+{% if site.data.display.homepage.show_experience %}
+<section class="home-journey" aria-labelledby="journey-title">
+    <header class="home-section-heading">
+        <div>
+            <span class="section-kicker">Academic journey</span>
+            <h2 id="journey-title">Experience &amp; education</h2>
+        </div>
+        <p>A path from satellite-based 3D reconstruction to ecological remote sensing and climate resilience.</p>
+    </header>
+    {% include widgets/experience_card.html %}
+</section>
+{% endif %}
+
+{% if site.data.display.homepage.show_news %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
+    {% endif %}
+{% endif %}
 
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-        %}
-        {% endif %}
-    </div>
-</div>
+{% if site.data.display.homepage.show_selected_publications %}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
+{% endif %}

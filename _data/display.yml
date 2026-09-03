@@ -1,7 +1,7 @@
 homepage:
   show_experience: true
-  show_news: true
-  show_selected_publications: true
+  show_news: false
+  show_selected_publications: false
   num_news: 4
 
 footer_text: >-
