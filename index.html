@@ -51,6 +51,16 @@ container_class: container-xl
                     <i class="fas fa-envelope" aria-hidden="true"></i>
                 </a>
                 {% endif %}
+                {% if site.data.profile.gscholar %}
+                    {% if site.data.profile.gscholar contains 'scholar.google' %}
+                        {% assign gscholar_url = site.data.profile.gscholar %}
+                    {% else %}
+                        {% assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar %}
+                    {% endif %}
+                <a target="_blank" rel="noopener" href="{{ gscholar_url }}" aria-label="Google Scholar">
+                    <i class="fab fa-google-scholar" aria-hidden="true"></i>
+                </a>
+                {% endif %}
                 {% if site.data.profile.github %}
                 <a target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub">
                     <i class="fab fa-github" aria-hidden="true"></i>
