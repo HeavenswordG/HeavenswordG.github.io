@@ -2,6 +2,7 @@
 title: "Enhanced Remote Sensing of Surface Water Chlorophyll-a: Coupling Dynamic Algae Vertical Movement Modeling with Multi-Spectral Satellite Images"
 date: 2026-04-01
 selected: true
+cover: "/assets/images/covers/inland-water-2026.png"
 pub: "ISPRS Journal of Photogrammetry and Remote Sensing"
 pub_date: "2026"
 abstract: >-

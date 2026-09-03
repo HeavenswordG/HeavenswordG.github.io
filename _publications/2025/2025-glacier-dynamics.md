@@ -2,6 +2,7 @@
 title: "Using PlanetScope-Derived Time-Series Elevation Models and Orthophotos to Track Glacier 3D Dynamics in Mid-Latitude Mountain Regions"
 date: 2025-05-21
 selected: true
+cover: "/assets/images/covers/glacier-2025.png"
 pub: "GIScience & Remote Sensing"
 pub_date: "2025"
 abstract: >-

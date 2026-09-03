@@ -2,6 +2,7 @@
 title: "Automated LoD-2 Model Reconstruction from Very-High-Resolution Satellite-derived Digital Surface Model and Orthophoto"
 date: 2021-11-01
 selected: false
+cover: "/assets/images/covers/urban-3d-2021.jpg"
 pub: "ISPRS Journal of Photogrammetry and Remote Sensing"
 pub_date: "2021"
 abstract: >-

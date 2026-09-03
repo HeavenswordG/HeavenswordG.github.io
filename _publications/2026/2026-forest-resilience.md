@@ -2,6 +2,7 @@
 title: "Prior Low-Severity Fires Reduce the Risk of Persistent Forest Loss from Subsequent Fires"
 date: 2026-08-24
 selected: true
+cover: "/assets/images/covers/forest-wildfire-2026.png"
 pub: "bioRxiv"
 pub_date: "2026"
 abstract: >-

@@ -2,6 +2,7 @@
 title: "Unit-level LoD2 Building Reconstruction from Satellite-derived Digital Surface Model and Orthophoto"
 date: 2024-06-10
 selected: false
+cover: "/assets/images/covers/urban-3d-2024.png"
 pub: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
 pub_date: "2024"
 abstract: >-

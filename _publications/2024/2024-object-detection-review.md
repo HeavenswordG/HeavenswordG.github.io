@@ -2,6 +2,7 @@
 title: "Remote Sensing Object Detection in the Deep Learning Era—A Review"
 date: 2024-01-12
 selected: true
+cover: "/assets/images/covers/object-detection-2024.png"
 pub: "Remote Sensing"
 pub_date: "2024"
 abstract: >-
