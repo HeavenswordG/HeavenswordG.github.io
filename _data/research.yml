@@ -3,9 +3,9 @@ overview:
   title_line_1: "Remote sensing across"
   title_line_2: "built and natural environments"
   description: >-
-    I develop Earth-observation methods that connect satellite imagery,
-    photogrammetry, 3D data, and artificial intelligence with questions about
-    cities, forests, mountains, and inland waters.
+    Earth-observation research connects satellite imagery, photogrammetry,
+    3D data, and artificial intelligence to measure form and change across
+    cities, forests, glaciers, and inland waters.
   image: "/assets/images/research/remote-sensing-overview.jpg"
   image_alt: >-
     Integrated remote-sensing view of a city, forest and burned area,
@@ -22,11 +22,14 @@ directions:
     image_alt: "Research figure for satellite-based urban 3D reconstruction"
     image_hint: "Add an urban reconstruction figure"
     description: >-
-      I develop satellite-photogrammetry workflows that transform stereo and
-      multi-view imagery into digital surface models, orthophotos, and
-      structured 3D representations of buildings. This work combines geometric
-      modeling, object detection, and deep learning to make detailed urban
-      mapping more scalable and transferable.
+      Satellite-derived orthophotos and digital surface models support scalable
+      LoD-2 building reconstruction across large urban areas. The research
+      combines deep-learning detection and instance segmentation with polygon
+      regularization, roof-structure inference, and model fitting to recover
+      individual buildings and roof geometry, including dense structures with
+      shared boundaries. These workflows reduce reliance on aerial imagery,
+      LiDAR, and external terrain models while improving geometric completeness
+      and transferability across cities.
     methods:
       - "Satellite photogrammetry"
       - "LoD-2 modeling"
@@ -53,11 +56,14 @@ directions:
     image_alt: "Research figure for forest disturbance and wildfire recovery"
     image_hint: "Add a forest or wildfire figure"
     description: >-
-      I use satellite time series and spatial metrics to study how fire
-      severity, repeated burns, and a changing climate alter forest structure
-      and recovery. The goal is to identify where resilience is being eroded,
-      where prior fire moderates future impacts, and how remote sensing can
-      reveal persistent forest loss at landscape scales.
+      Satellite-observed trajectories of forest structure and ecosystem
+      function are used to quantify postfire recovery, persistent forest loss,
+      and changing biomass across landscapes. Analyses connect fire severity,
+      repeat burning, climate, and spatial configuration to forest resilience,
+      while evaluating whether earlier low-severity fire can moderate the
+      long-term consequences of subsequent wildfire. This work helps identify
+      high-risk regions and supports targeted management from regional to
+      global scales.
     methods:
       - "Satellite time series"
       - "Spatial pattern analysis"
@@ -81,10 +87,12 @@ directions:
     image_alt: "Research figure for satellite monitoring of glacier dynamics"
     image_hint: "Add a mountain or glacier figure"
     description: >-
-      I use high-cadence satellite imagery to reconstruct elevation and surface
-      change in remote mountain environments. Time-series elevation models and
-      orthophotos make it possible to track glacier motion and three-dimensional
-      dynamics where field observations are sparse.
+      High-cadence PlanetScope stereo imagery is converted into co-registered
+      time-series elevation models and orthophotos to measure glacier elevation
+      change, surface motion, and volumetric dynamics in three dimensions. The
+      workflow resolves seasonal and longer-term trends in remote mid-latitude
+      glaciers, compares elevation trajectories with independent observations,
+      and relates changes in glacier flow to environmental drivers.
     methods:
       - "Time-series elevation models"
       - "PlanetScope imagery"
@@ -102,10 +110,13 @@ directions:
     image_alt: "Research figure for satellite monitoring of lake water quality"
     image_hint: "Add a lake or water-quality figure"
     description: >-
-      I connect multispectral satellite observations with process-aware models
-      to improve monitoring of inland water quality. Current work accounts for
-      the vertical movement of algae when estimating surface-water chlorophyll-a,
-      helping reconcile what satellites observe with how aquatic systems behave.
+      Near-daily PlanetScope observations are combined with in-situ sonde
+      profiles and a model of diurnal algal vertical migration to improve
+      chlorophyll-a estimation. Temporally adjusting field-to-satellite matchups
+      reduces observation mismatch, strengthens estimates during non-bloom
+      periods, and supports transfer across multiple lakes. The resulting
+      sensor-agnostic preprocessing framework is designed for routine water-quality
+      monitoring and earlier harmful-algal-bloom alerts.
     methods:
       - "Multispectral imagery"
       - "Water quality"
