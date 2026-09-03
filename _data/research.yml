@@ -130,6 +130,9 @@ directions:
   - id: "geoai"
     label: "GeoAI"
     title: "GeoAI"
+    image: "/assets/images/research/object-detection-2024.png"
+    image_alt: "Remote-sensing platforms, multimodal Earth-observation data, and object-detection tasks"
+    figure_caption: "Remote-sensing object detection across observing platforms, multimodal data, and downstream vision tasks."
     description: >-
       GeoAI research develops learning-based methods that connect Earth-observation
       imagery with visual and linguistic reasoning. The work spans object detection
@@ -148,5 +151,5 @@ directions:
         year: "2024"
         url: "https://doi.org/10.3390/rs16020327"
       - title: "Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation"
-        year: "2026"
+        year: "Under review"
         url: "https://arxiv.org/abs/2606.30244"
