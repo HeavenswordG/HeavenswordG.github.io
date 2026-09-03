@@ -39,20 +39,30 @@ education:
   dept: Department of Civil, Environmental & Geodetic Engineering
   position: Ph.D.
   date: Aug 2020 - May 2024
+  logo: "/assets/images/badges/Ohio_State_University_seal.svg.webp"
+  logo_alt: "The Ohio State University seal"
 - name: The Ohio State University
   dept: Department of Civil, Environmental & Geodetic Engineering
   position: M.S.
   date: Aug 2018 - May 2020
+  logo: "/assets/images/badges/Ohio_State_University_seal.svg.webp"
+  logo_alt: "The Ohio State University seal"
 - name: Wuhan University
   dept: School of Remote Sensing and Information Engineering
   position: B.S.
   date: Sep 2014 - Jun 2018
+  logo: "/assets/images/badges/Wuhan_University_Logo.png"
+  logo_alt: "Wuhan University logo"
 
 experience:
 - name: University of Michigan
   dept: School for Environment and Sustainability · Institute for Global Change Biology
   position: Postdoctoral Researcher
   date: Aug 2024 - Aug 2026
+  logo: "/assets/images/badges/Seal_of_the_University_of_Michigan.svg.webp"
+  logo_alt: "University of Michigan seal"
 - name: Michigan Institute for Data & AI in Society
   position: Postdoctoral Affiliates Fellow
   date: 2025 Cohort
+  logo: "/assets/images/badges/Seal_of_the_University_of_Michigan.svg.webp"
+  logo_alt: "University of Michigan seal"

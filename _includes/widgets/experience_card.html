@@ -10,10 +10,17 @@
             <li class="timeline-entry">
                 <div class="timeline-date">{{ item.date }}</div>
                 <div class="timeline-rail" aria-hidden="true"><span></span></div>
-                <div class="timeline-content">
-                    <h4>{{ item.position }}</h4>
-                    <p class="timeline-organization">{{ item.name }}</p>
-                    {% if item.dept %}<p class="timeline-detail">{{ item.dept }}</p>{% endif %}
+                <div class="timeline-content{% if item.logo %} timeline-content-with-logo{% endif %}">
+                    <div class="timeline-copy">
+                        <h4>{{ item.position }}</h4>
+                        <p class="timeline-organization">{{ item.name }}</p>
+                        {% if item.dept %}<p class="timeline-detail">{{ item.dept }}</p>{% endif %}
+                    </div>
+                    {% if item.logo %}
+                    <div class="timeline-logo">
+                        <img src="{{ item.logo | relative_url }}" alt="{{ item.logo_alt | default: item.name }}" loading="lazy" width="64" height="64">
+                    </div>
+                    {% endif %}
                 </div>
             </li>
             {% endfor %}
@@ -32,10 +39,17 @@
             <li class="timeline-entry">
                 <div class="timeline-date">{{ item.date }}</div>
                 <div class="timeline-rail" aria-hidden="true"><span></span></div>
-                <div class="timeline-content">
-                    <h4>{{ item.position }}</h4>
-                    <p class="timeline-organization">{{ item.name }}</p>
-                    {% if item.dept %}<p class="timeline-detail">{{ item.dept }}</p>{% endif %}
+                <div class="timeline-content{% if item.logo %} timeline-content-with-logo{% endif %}">
+                    <div class="timeline-copy">
+                        <h4>{{ item.position }}</h4>
+                        <p class="timeline-organization">{{ item.name }}</p>
+                        {% if item.dept %}<p class="timeline-detail">{{ item.dept }}</p>{% endif %}
+                    </div>
+                    {% if item.logo %}
+                    <div class="timeline-logo">
+                        <img src="{{ item.logo | relative_url }}" alt="{{ item.logo_alt | default: item.name }}" loading="lazy" width="64" height="64">
+                    </div>
+                    {% endif %}
                 </div>
             </li>
             {% endfor %}
