@@ -1,5 +1,7 @@
 overview:
   title: "Remote sensing across built and natural environments"
+  title_line_1: "Remote sensing across"
+  title_line_2: "built and natural environments"
   description: >-
     I develop Earth-observation methods that connect satellite imagery,
     photogrammetry, 3D data, and artificial intelligence with questions about

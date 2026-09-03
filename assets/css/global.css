@@ -328,9 +328,13 @@ div.lazy {
     max-width: 780px;
     margin-bottom: 1.6rem;
     color: #fffdf8;
-    font-size: clamp(3rem, 6.4vw, 5.8rem);
+    font-size: clamp(3rem, 4.7vw, 4.8rem);
     line-height: 0.96;
     letter-spacing: -0.045em;
+}
+
+.home-hero h1 span {
+    display: block;
 }
 
 .home-intro {
@@ -514,8 +518,8 @@ div.lazy {
 
 .timeline-group {
     display: grid;
-    grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
-    gap: clamp(1.5rem, 5vw, 4.5rem);
+    grid-template-columns: minmax(9rem, 0.22fr) minmax(0, 1fr);
+    gap: clamp(1rem, 2.5vw, 2.25rem);
     padding: clamp(1.5rem, 4vw, 2.8rem);
     border: 1px solid rgba(23, 63, 53, 0.09);
     border-radius: 1.15rem;
@@ -549,8 +553,8 @@ div.lazy {
 
 .timeline-entry {
     display: grid;
-    grid-template-columns: 7.5rem 1.2rem minmax(0, 1fr);
-    gap: 1rem;
+    grid-template-columns: 10.25rem 1.2rem minmax(0, 1fr);
+    gap: 0.9rem;
     min-height: 7.2rem;
 }
 
@@ -564,6 +568,7 @@ div.lazy {
     font-family: "Source Code Pro", monospace;
     font-size: 0.75rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .timeline-rail {
@@ -630,22 +635,25 @@ div.lazy {
 }
 
 .research-intro {
-    display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(19rem, 0.75fr);
-    gap: clamp(2rem, 6vw, 6rem);
-    align-items: end;
-    padding: 2.3rem 0 2rem;
+    max-width: 1180px;
+    padding: 2.3rem 0 2.4rem;
 }
 
 .research-intro h1 {
-    max-width: 800px;
-    margin-bottom: 0;
-    font-size: clamp(2.8rem, 6.5vw, 5.6rem);
-    line-height: 0.96;
+    max-width: none;
+    margin: 0.7rem 0 1.35rem;
+    font-size: clamp(3rem, 4.6vw, 4.7rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+.research-intro h1 span {
+    display: block;
 }
 
 .research-intro .lead {
-    margin-bottom: 0.3rem;
+    max-width: 780px;
+    margin-bottom: 0;
     color: var(--ink-soft);
     font-size: clamp(1rem, 1.8vw, 1.18rem);
     line-height: 1.7;
@@ -885,12 +893,7 @@ div.lazy {
     }
 
     .home-hero h1 {
-        font-size: clamp(2.75rem, 7vw, 4.6rem);
-    }
-
-    .research-intro {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
+        font-size: clamp(2.7rem, 5.5vw, 3.7rem);
     }
 
     .research-intro .lead {
@@ -994,7 +997,7 @@ div.lazy {
     }
 
     .timeline-entry {
-        grid-template-columns: 5.6rem 1rem minmax(0, 1fr);
+        grid-template-columns: 10.25rem 1rem minmax(0, 1fr);
         gap: 0.75rem;
     }
 
@@ -1013,6 +1016,13 @@ div.lazy {
     .research-direction-media,
     .research-figure-placeholder {
         min-height: min(22rem, 70vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .home-hero h1 span,
+    .research-intro h1 span {
+        white-space: nowrap;
     }
 }
 

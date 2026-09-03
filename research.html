@@ -9,7 +9,10 @@ container_class: container-xl
 
 <header class="research-intro">
     <span class="section-kicker">Research program</span>
-    <h1>{{ site.data.research.overview.title }}</h1>
+    <h1>
+        <span>{{ site.data.research.overview.title_line_1 | default: "Remote sensing across" }}</span>
+        <span>{{ site.data.research.overview.title_line_2 | default: "built and natural environments" }}</span>
+    </h1>
     <p class="lead">{{ site.data.research.overview.description }}</p>
 </header>
 
@@ -22,7 +25,7 @@ container_class: container-xl
         <div class="research-domain-list" aria-label="Research environments">
             <span><i class="fas fa-city" aria-hidden="true"></i> Urban</span>
             <span><i class="fas fa-tree" aria-hidden="true"></i> Forest</span>
-            <span><i class="fas fa-mountain" aria-hidden="true"></i> Mountain &amp; glacier</span>
+            <span><i class="fas fa-mountain" aria-hidden="true"></i> Glacier</span>
             <span><i class="fas fa-water" aria-hidden="true"></i> Inland water</span>
         </div>
     </figcaption>

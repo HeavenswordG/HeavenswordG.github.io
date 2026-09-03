@@ -14,7 +14,10 @@ container_class: container-xl
 <section class="home-hero" aria-labelledby="home-title">
     <div class="home-hero-copy">
         <p class="home-eyebrow">Shengxi Gui <span aria-hidden="true">·</span> Remote sensing scientist</p>
-        <h1 id="home-title">{{ site.data.profile.bio_title | default: "Remote sensing for a changing planet" }}</h1>
+        <h1 id="home-title">
+            <span>{{ site.data.profile.bio_title_line_1 | default: "Remote sensing across" }}</span>
+            <span>{{ site.data.profile.bio_title_line_2 | default: "a changing planet" }}</span>
+        </h1>
 
         <div class="home-intro" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
             {{ site.data.profile.short_bio }}
