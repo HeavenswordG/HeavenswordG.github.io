@@ -40,7 +40,13 @@ container_class: container-xl
 
     <div class="research-direction-list">
         {% for direction in site.data.research.directions %}
-        <article class="research-direction" id="{{ direction.id }}">
+        {% assign has_direction_figure = false %}
+        {% if direction.image and direction.image != "" %}
+            {% assign has_direction_figure = true %}
+        {% elsif direction.image_hint %}
+            {% assign has_direction_figure = true %}
+        {% endif %}
+        <article class="research-direction{% unless has_direction_figure %} research-direction--text-only{% endunless %}" id="{{ direction.id }}">
             <header class="research-direction-header">
                 <div class="research-direction-index">
                     <span>{{ forloop.index | prepend: '0' }}</span>
@@ -49,6 +55,7 @@ container_class: container-xl
                 <h2>{{ direction.title }}</h2>
             </header>
 
+            {% if has_direction_figure %}
             <figure class="research-direction-figure">
                 {% if direction.image and direction.image != "" %}
                 <a
@@ -79,6 +86,7 @@ container_class: container-xl
                 </figcaption>
                 {% endif %}
             </figure>
+            {% endif %}
 
             <div class="research-direction-body">
                 <div class="research-direction-summary">

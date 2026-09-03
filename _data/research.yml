@@ -82,7 +82,7 @@ directions:
 
   - id: "mountains-glaciers"
     label: "Glacier"
-    title: "Glacier dynamics"
+    title: "Glacier 3D dynamics"
     image: "/assets/images/research/glacier-dynamics.png"
     image_alt: "Satellite-derived three-dimensional terrain model and glacier surface-velocity map"
     figure_caption: "Satellite-derived 3D terrain and surface-velocity mapping for glacier dynamics."
@@ -97,7 +97,7 @@ directions:
       - "Time-series elevation models"
       - "PlanetScope imagery"
       - "Surface change"
-      - "Glacier dynamics"
+      - "Glacier 3D dynamics"
     publications:
       - title: "Using PlanetScope-derived time-series elevation models and orthophotos to track glacier 3D dynamics in mid-latitude mountain regions"
         year: "2025"
@@ -126,3 +126,27 @@ directions:
       - title: "Enhanced remote sensing of surface water Chlorophyll-a: Coupling dynamic algae vertical movement modeling with multi-spectral satellite images"
         year: "2026"
         url: "https://doi.org/10.1016/j.isprsjprs.2026.02.028"
+
+  - id: "geoai"
+    label: "GeoAI"
+    title: "GeoAI"
+    description: >-
+      GeoAI research develops learning-based methods that connect Earth-observation
+      imagery with visual and linguistic reasoning. The work spans object detection
+      across optical, SAR, and multimodal remote-sensing data, as well as
+      parameter-efficient text-image alignment for referring image segmentation.
+      Recent methods use semantic language proxies and language-guided multi-scale
+      spatial selection to adapt foundation models while updating only a small
+      fraction of their backbone parameters.
+    methods:
+      - "Deep learning"
+      - "Multimodal learning"
+      - "Vision-language models"
+      - "Parameter-efficient adaptation"
+    publications:
+      - title: "Remote Sensing Object Detection in the Deep Learning Era—A Review"
+        year: "2024"
+        url: "https://doi.org/10.3390/rs16020327"
+      - title: "Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation"
+        year: "2026"
+        url: "https://arxiv.org/abs/2606.30244"

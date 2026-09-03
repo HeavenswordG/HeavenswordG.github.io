@@ -944,6 +944,10 @@ a.research-direction-media:hover > img {
     padding: clamp(1.4rem, 3.5vw, 2.7rem);
 }
 
+.research-direction--text-only .research-direction-body {
+    border-top: 1px solid var(--line);
+}
+
 .research-direction-description {
     margin: 0;
     color: var(--ink-soft);
