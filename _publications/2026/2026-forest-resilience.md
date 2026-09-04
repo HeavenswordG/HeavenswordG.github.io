@@ -4,6 +4,7 @@ date: 2026-08-24
 selected: true
 cover: "/assets/images/covers/forest-wildfire-2026.png"
 pub: "bioRxiv"
+pub_post: " · Under review"
 pub_date: "2026"
 abstract: >-
   A global satellite analysis of postfire recovery that evaluates persistent
