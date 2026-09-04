@@ -33,7 +33,6 @@ directions:
     methods:
       - "Satellite photogrammetry"
       - "LoD-2 modeling"
-      - "Object detection"
       - "3D reconstruction"
     publications:
       - title: "Automated LoD-2 model reconstruction from very-high-resolution satellite-derived digital surface model and orthophoto"
@@ -65,9 +64,8 @@ directions:
       high-risk regions and supports targeted management from regional to
       global scales.
     methods:
-      - "Satellite time series"
       - "Spatial pattern analysis"
-      - "Disturbance ecology"
+      - "Fire ecology"
       - "Forest resilience"
     publications:
       - title: "Prior low-severity burns reduce risk of persistent forest loss from subsequent fires"
@@ -96,8 +94,7 @@ directions:
     methods:
       - "Time-series elevation models"
       - "PlanetScope imagery"
-      - "Surface change"
-      - "Glacier 3D dynamics"
+      - "Monthly glacier 3D reconstruction"
     publications:
       - title: "Using PlanetScope-derived time-series elevation models and orthophotos to track glacier 3D dynamics in mid-latitude mountain regions"
         year: "2025"
@@ -119,9 +116,8 @@ directions:
       monitoring and earlier harmful-algal-bloom alerts.
     methods:
       - "Multispectral imagery"
-      - "Water quality"
       - "Chlorophyll-a"
-      - "Process-based modeling"
+      - "Algal Behavior Modeling"
     publications:
       - title: "Enhanced remote sensing of surface water Chlorophyll-a: Coupling dynamic algae vertical movement modeling with multi-spectral satellite images"
         year: "2026"
@@ -142,10 +138,9 @@ directions:
       spatial selection to adapt foundation models while updating only a small
       fraction of their backbone parameters.
     methods:
-      - "Deep learning"
+      - "Object detection"
       - "Multimodal learning"
       - "Vision-language models"
-      - "Parameter-efficient adaptation"
     publications:
       - title: "Remote Sensing Object Detection in the Deep Learning Era—A Review"
         year: "2024"
